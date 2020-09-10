@@ -113,6 +113,8 @@ body {
 .footer-container {
   bottom: 0;
   width: 100%;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .footer-container svg {
@@ -121,9 +123,26 @@ body {
 }
 
 .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   margin-top: 0;
   background-color: #3cffa6;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #375045;
+}
+
+.footer-content a:hover {
+  color: #ececec;
 }
 
 @media (max-width: 765px) {

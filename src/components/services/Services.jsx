@@ -2,10 +2,14 @@ import React from 'react';
 import mower from '../../images/lawn-mower.jpg'
 import tractor from '../../images/lawn-tractor.jpg'
 import robot from '../../images/lawn-robot.jpg'
+import { Helmet } from 'react-helmet';
 
 const Services = () => {
     return (
         <div className="services-container">
+            <Helmet>
+                <title>The Grass Mowers - Services</title>
+            </Helmet>
             <h3>WE PROVIDE THREE DIFFERENT KINDS OF GRASS MOWNING.</h3>
             <br />
             <div className="mowning-types">

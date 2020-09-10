@@ -2,10 +2,19 @@ import React from 'react';
 import twitterLogo from '../../images/twitter-square-brands.svg';
 import instagramLogo from '../../images/instagram-square-brands.svg';
 import facebookLogo from '../../images/facebook-square-brands.svg';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
     return (
         <div className="contact-container">
+            <Helmet>
+                <title>The Grass Mowers - Contact</title>
+            </Helmet>
+            <div className="info">
+                1 Ed Preate Dr, Scranton, Pennsylvania.<br/>
+                +1 999-7878<br/>
+                thegrassmowers@pennsylvaniamowers.com
+            </div>   
             <div className="maps-pointer">
             <iframe 
                 title="maps"
@@ -16,12 +25,7 @@ const Contact = () => {
                 aria-hidden="false" 
                 tabindex="0">
             </iframe>
-            </div>
-            <div className="info">
-                1 Ed Preate Dr, Scranton, Pennsylvania.<br/>
-                +1 999-7878<br/>
-                thegrassmowers@pennsylvaniamowers.com
-            </div>             
+            </div>          
             <div className="social">
                 <img href="#" className="twitter" src={ twitterLogo } alt="twitter" width='40px' height='40px' />
                 <img href="#" className="twitter" src={ instagramLogo } alt="twitter" width='40px' height='40px' />
