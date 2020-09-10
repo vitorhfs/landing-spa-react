@@ -1,0 +1,160 @@
+.App {
+  text-align: center;
+}
+
+$main-white: #ececec;
+$main-green: #3cffa6;
+$main-black: #3f3f3f;
+$secondary-green: #375045;
+$tablet-width: 765px;
+$smartphone-width: 450px;
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+body {
+  color: $main-black;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  background-color: $main-white;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 80%;
+  font-size: 20px;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    li {
+      text-decoration: none;
+      display: inline;
+      padding-right: 30px;
+      a {
+        font-weight: 500;
+        text-decoration: none;
+        color: $secondary-green;
+        &:hover {
+          color: $main-green;
+        }
+      }
+    }
+  }
+}
+
+.home-container{
+  min-height: 80%;
+  margin: 0 auto;
+  height: 70vh;
+  position: relative;
+  img {
+    position: absolute;
+    max-width: 600px;
+    left: 20%;
+    top: 25%;
+  }
+}
+
+.services-container {
+  width: 600px;
+  margin: auto;
+  img {
+    width: 600px;
+  }
+  h3 {
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+.contact-container {
+  padding: 20px 0;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.info {
+  text-align: left;
+  width: 600px;
+  margin: 20px auto;
+}
+
+.social {
+  text-align: left;
+  img {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.contact {
+  text-align: left;
+  p {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+.footer-container {
+  bottom: 0;
+  width: 100%;
+  svg {
+    display: block;
+    margin: auto 0 0 0;
+  }
+}
+
+.footer-content {
+  margin-top: 0;
+  background-color: $main-green;
+  padding: 20px;
+}
+
+@media (max-width: $tablet-width) {
+  .home-container {
+    img {
+      max-width: 400px;
+      left: 10%;
+    }
+  }
+}
+
+@media (max-width: $smartphone-width) {
+  .nav-container {
+    font-size: 12px;
+  }
+  
+  .home-container {
+    img {
+      max-width: 250px;
+      left: 20px;
+    }
+  }
+  .services-container {
+    width: 100%;
+    img{
+      width: 100%;
+    }
+    p {
+      width: 100%;
+    }
+  }
+
+  .contact {
+
+  }
+
+  .contact-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+.App {
+  text-align: center;
+}
+
+body {
+  color: #3f3f3f;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  background-color: #ececec;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav-container {
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 80%;
+  font-size: 20px;
+}
+
+.nav-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.nav-container ul li {
+  text-decoration: none;
+  display: inline;
+  padding-right: 30px;
+}
+
+.nav-container ul li a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #375045;
+}
+
+.nav-container ul li a:hover {
+  color: #3cffa6;
+}
+
+.home-container {
+  min-height: 80%;
+  margin: 0 auto;
+  height: 70vh;
+  position: relative;
+}
+
+.home-container img {
+  position: absolute;
+  max-width: 600px;
+  left: 20%;
+  top: 25%;
+}
+
+.services-container {
+  width: 600px;
+  margin: auto;
+}
+
+.services-container img {
+  width: 600px;
+}
+
+.services-container h3 {
+  font-weight: 400;
+}
+
+.services-container h2 {
+  font-size: 35px;
+}
+
+.services-container p {
+  text-align: left;
+}
+
+.contact-container {
+  padding: 20px 0;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.info {
+  text-align: left;
+  width: 600px;
+  margin: 20px auto;
+}
+
+.social {
+  text-align: left;
+}
+
+.social img {
+  cursor: pointer;
+}
+
+.social img:hover {
+  opacity: 0.8;
+}
+
+.contact {
+  text-align: left;
+}
+
+.contact p {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.footer-container {
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container svg {
+  display: block;
+  margin: auto 0 0 0;
+}
+
+.footer-content {
+  margin-top: 0;
+  background-color: #3cffa6;
+  padding: 20px;
+}
+
+@media (max-width: 765px) {
+  .home-container img {
+    max-width: 400px;
+    left: 10%;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-container {
+    font-size: 12px;
+  }
+  .home-container img {
+    max-width: 250px;
+    left: 20px;
+  }
+  .services-container {
+    width: 100%;
+  }
+  .services-container img {
+    width: 100%;
+  }
+  .services-container p {
+    width: 100%;
+  }
+  .contact-container {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
